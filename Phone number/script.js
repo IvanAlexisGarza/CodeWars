@@ -21,3 +21,22 @@ function createPhoneNumber(numbers){
         + '-' 
         + numbers.substring(6);
   }
+
+  function createPhoneNumber(numbers){
+    var format = "(xxx) xxx-xxxx";
+    
+    for(var i = 0; i < numbers.length; i++)
+    {
+      format = format.replace('x', numbers[i]);
+    }
+    
+    return format;
+  }
+
+  function createPhoneNumber(numbers){
+    return numbers.join('').replace(/(...)(...)(.*)/, '($1) $2-$3');
+  }
+  
+  function createPhoneNumber(numbers){
+    return numbers.join('').replace(/(\d{3})(\d{3})(\d{4})/,'($1) $2-$3');
+  }
