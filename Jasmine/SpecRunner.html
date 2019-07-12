@@ -18,6 +18,14 @@
 <script src="lib/jasmine-3.4.0/jasmine-html.js"></script>
 <script src="lib/jasmine-3.4.0/boot.js"></script>
 <script src="lib/Jquery/jquery-1.7.js"></script>
+<script type="txt/javascript">
+  function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  setCookie("username", user, 30);</script>
 
 <!-- include source files here... -->
 <script src="src/calculator.js"></script>

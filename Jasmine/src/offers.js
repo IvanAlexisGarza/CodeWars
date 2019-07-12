@@ -712,7 +712,7 @@ function Offers() {
   
     this.searchAnalytics = function (icid) {
   
-      var promo2 = "AEM|Search Results";
+      var promo2 = "AEM|S earch Results";
       var keyWord = '';
   
       if (this.isValidValue(search.main.params.autoCorrectedKeyword)) {
