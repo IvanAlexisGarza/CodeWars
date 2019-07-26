@@ -1,3 +1,3 @@
-function selectionSort() {
+function selectionSort(arr) {
     
 }
