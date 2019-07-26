@@ -12,7 +12,8 @@ function bubbleSort(arr) {
     return arr;
 }
 
-// console.log(bubbleSort([1,84,654,8,153,68,2,6,53,5]));
+console.log(bubbleSort([1,84,654,8,153,68,2,6,53,5]));
+
 // var a = 5, b = 9;    
 // b = (a += b -= a) - b;    
 // alert([a, b]); // alerts "9, 5"
