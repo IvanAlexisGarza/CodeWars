@@ -19,9 +19,7 @@ class User {
 
         let increment = this.calculatePoints(activityrank, this.rank);
         this.progress += increment;
-        let tempp = this.progress;
-
-        if (tempp >= 100 && this.rank < 8) {
+        if (this.progress >= 100 && this.rank < 8) {
             this.incRank(Math.floor(this.progress / 100));
             if (this.rank < 8) this.progress = this.progress % 100
         }
@@ -60,11 +58,11 @@ class User {
     }
 }
 
-// var user = new User()
-// console.log("starting values: rank: " + user.rank + ", progress: " + user.progress);
-// user.rank // => -8  
-// user.progress // => 0
-// user.incProgress(3)
+var user = new User()
+console.log("starting values: rank: " + user.rank + ", progress: " + user.progress);
+user.rank // => -8  
+user.progress // => 0
+user.incProgress(-3)
 // console.log("starting values: rank: " + user.rank + ", progress: " + user.progress);
 // user.progress // => 10
 // user.incProgress(-5) // will add 90 progress
