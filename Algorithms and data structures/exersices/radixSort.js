@@ -33,18 +33,9 @@ function radixSort(arr){
     for(let i = 0 ; i < iterations ; i++) {
         let buckets = [...Array(10)].map(e => Array());
         for(let j = 0 ; j < arr.length ; j++) {
-            console.log(getDigit(arr[j], i));
             buckets[getDigit(arr[j],i)].push(arr[j]);
         }
-        arr = [];
-        for(let k = 0 ; k < 10 ; k++) {
-            if(buckets[k].length > 0) {
-                arr = arr.concat(buckets[k]);
-            }
-        }
-        console.log(buckets);
-        console.log(arr);
-
+        arr = [].concat(...buckets);
     }
     return arr;
 }
@@ -57,3 +48,11 @@ let arr = [ 2512, 689, 45, 8648, 19]
 console.log(radixSort(arr));
 // console.log(mostDigits(arr))
 // Math.abs(45) % Math.pow(10, 1);
+
+
+//create buckets may be done this way as well
+// let digitBuckets = Array.from({length: 10}, () => [])
+
+// /us/en/content-spotlights/scientific/2019/save-during-microcentrifuge-micro-mania.html
+
+// /us/en/offers/scientific/common/2019/q1/of-18-2729/wb-18-2729/csl.html
