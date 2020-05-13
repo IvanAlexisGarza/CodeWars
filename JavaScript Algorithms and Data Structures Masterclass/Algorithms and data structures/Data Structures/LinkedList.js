@@ -143,25 +143,25 @@ class SinglyLinkedList {
 
         let nextNode;
         let prevNode = null;
-        
+
         // this.tail.val = this.head.val;
         let counter = 0;
-        
+
         while (counter < this.length) {
             nextNode = currNode.next;
             currNode.next = prevNode;
             prevNode = currNode;
 
             currNode = nextNode;
-            
+
             counter++;
         }
     }
 
-    print(){
+    print() {
         var arr = [];
         var current = this.head
-        while(current){
+        while (current) {
             arr.push(current.val)
             current = current.next
         }
