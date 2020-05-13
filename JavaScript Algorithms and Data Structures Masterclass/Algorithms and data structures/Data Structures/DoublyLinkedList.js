@@ -185,22 +185,3 @@ class DoublyLinkedList {
         return this;
     }
 }
-
-
-let list = new DoublyLinkedList();
-
-list.push(14)
-list.push(64)
-list.push(23)
-list.push(45)
-// list.push(70)
-// list.push(5)
-// list.push(6)
-// list.insert(5, "foo")
-
-// list.set(99, "foo");
-console.log(list);
-console.log("list.reverse() \n \n");
-list.reverse();
-console.log(list);
-
