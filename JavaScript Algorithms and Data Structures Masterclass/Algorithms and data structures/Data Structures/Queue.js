@@ -49,10 +49,6 @@ let queue = new Queue();
 queue.enqueue(0)
 queue.enqueue(1)
 
-
 // queue.dequeue();
-
-
-
 
 console.log(queue);
